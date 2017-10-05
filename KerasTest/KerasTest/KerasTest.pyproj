@@ -1,0 +1,81 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>c1059b61-3d98-4260-99a9-117e36fe68ad</ProjectGuid>
+    <ProjectTypeGuids>{a41c8ea1-112a-4a2d-9f91-29557995525f};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>classifier.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>KerasTest</Name>
+    <RootNamespace>KerasTest</RootNamespace>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda36-64</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="classifier.py" />
+    <Compile Include="examples\addition_rnn.py" />
+    <Compile Include="examples\antirectifier.py" />
+    <Compile Include="examples\babi_memnn.py" />
+    <Compile Include="examples\babi_rnn.py" />
+    <Compile Include="examples\cifar10_cnn.py" />
+    <Compile Include="examples\conv_filter_visualization.py" />
+    <Compile Include="examples\conv_lstm.py" />
+    <Compile Include="examples\deep_dream.py" />
+    <Compile Include="examples\image_ocr.py" />
+    <Compile Include="examples\imdb_bidirectional_lstm.py" />
+    <Compile Include="examples\imdb_cnn.py" />
+    <Compile Include="examples\imdb_cnn_lstm.py" />
+    <Compile Include="examples\imdb_fasttext.py" />
+    <Compile Include="examples\imdb_lstm.py" />
+    <Compile Include="examples\lstm_benchmark.py" />
+    <Compile Include="examples\lstm_text_generation.py" />
+    <Compile Include="examples\mnist_acgan.py" />
+    <Compile Include="examples\mnist_cnn.py" />
+    <Compile Include="examples\mnist_hierarchical_rnn.py" />
+    <Compile Include="examples\mnist_irnn.py" />
+    <Compile Include="examples\mnist_mlp.py" />
+    <Compile Include="examples\mnist_net2net.py" />
+    <Compile Include="examples\mnist_siamese_graph.py" />
+    <Compile Include="examples\mnist_sklearn_wrapper.py" />
+    <Compile Include="examples\mnist_swwae.py" />
+    <Compile Include="examples\mnist_tfrecord.py" />
+    <Compile Include="examples\mnist_transfer_cnn.py" />
+    <Compile Include="examples\neural_doodle.py" />
+    <Compile Include="examples\neural_style_transfer.py" />
+    <Compile Include="examples\pretrained_word_embeddings.py" />
+    <Compile Include="examples\reuters_mlp.py" />
+    <Compile Include="examples\reuters_mlp_relu_vs_selu.py" />
+    <Compile Include="examples\stateful_lstm.py" />
+    <Compile Include="examples\variational_autoencoder.py" />
+    <Compile Include="examples\variational_autoencoder_deconv.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda36-64" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="examples\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="examples\README.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
